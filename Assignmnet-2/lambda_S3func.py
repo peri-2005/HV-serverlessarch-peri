@@ -4,8 +4,8 @@ from botocore.exceptions import ClientError
 
 def lambda_handler(event, context):
     # Target configuration
-    BUCKET_NAME = "your-bucket-name-here"  # Replace with your bucket name
-    DAYS_THRESHOLD = 30
+    BUCKET_NAME = "aparna-testbucket"  # Replace with your bucket name
+    DAYS_THRESHOLD = 0
     
     # Initialize S3 client
     s3_client = boto3.client('s3')
